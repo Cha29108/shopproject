@@ -1,0 +1,357 @@
+/* Overall container for product list */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  /* Individual product card styling */
+  .product-card {
+    background-color: gray; /* Card background */
+    border: 1px solid black; /* Border around the card */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgb(227, 232, 226);
+    box-shadow: 0 10px 10px rgba(208, 91, 91, 0.1); /* Shadow effect */
+    margin: 15px;
+    padding: 15px;
+    width: 250px; /* Fixed width for uniformity */
+    transition: transform 0.2s; /* Animation effect on hover */
+  }
+  
+  /* Image styling */
+  .product-card img {
+    border-radius: 8px; /* Rounded corners for images */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+
+  }
+  
+  /* Product name styling */
+  .product-card h3 {
+    font-size: 18px; /* Font size for product name */
+    margin: 10px 0; /* Space around the title */
+    color: #333; /* Darker color for text */
+
+  }
+  
+  /* Price and likes styling */
+  .product-card p {
+    font-size: 16px; /* Font size for price and likes */
+    color: #666; /* Gray color for secondary text */
+  }
+  
+  /* Button styling */
+  .product-card button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 5px 0; /* Space between buttons */
+    transition: background-color 0.3s; /* Animation for hover effect */
+  }
+  
+  /* Button hover effect */
+  .product-card button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Card hover effect */
+  .product-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  .login-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://img.freepik.com/premium-photo/top-view-credit-card-smartphone-keyboard-isolated-yellow-background_400481-23.jpg'); /* Replace with your chosen image URL */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+
+/* Container for the login form */
+
+/* Form styling */
+.login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set a fixed width for the form */
+}
+
+/* Input field styling */
+.login-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0; /* Margin between inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Focus state for input fields */
+.login-input:focus {
+    border-color: #4a90e2; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.login-button {
+    width: 100%; /* Full width */
+    padding: 10px;
+    background-color: #4a90e2; /* Primary color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+.login-button:hover {
+    background-color: #357ab8; /* Darker shade on hover */
+}
+.homepage-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.homepage-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin: 10px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.products-section {
+    padding: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price,
+.product-likes {
+    color: #555;
+}
+
+.product-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #0056b3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+    border-radius: 50px;
+    border: 5px solid black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 500px;
+    height:40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.user-name {
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.image-slider {
+    position: static;
+    width: 100%;
+    max-width:100%;
+    height:600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-slider img {
+    width: 100%;
+    display: none; /* Hide all images by default */
+}
+
+.image-slider img.active {
+    display: block; /* Show the active image */
+}
+
+.additional-images {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+}
+
+.additional-images img {
+    width:200px; /* Adjust size as needed */
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0px;
+    width: 100%;
+}
+/* LoadingSpinner.css */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Change the color as needed */
+    border-radius: 50%;
+    width: 60px; /* Size of the spinner */
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+.logo1
+{
+    display: flex;
+    align-items: center;
+}
+.logo1 img{
+    width: 120px;
+  border-radius: 50px;
+  border: 5px solid black;
+    height:120px;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .contact-info strong {
+    color: #333;
+  }
+  
+  .contact-info {
+    line-height: 1.8;
+  }
+  
